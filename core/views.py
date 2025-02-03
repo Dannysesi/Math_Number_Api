@@ -7,7 +7,7 @@ def number_properties_view(request):
     number_str = request.GET.get("number")
 
     # Validate input
-    if not number_str or not number_str.isdigit():
+    if not number_str or not number_str.lstrip('-').isdigit():
         return JsonResponse({"number": number_str, "error": "Invalid input"}, status=400)
 
     number = int(number_str)
