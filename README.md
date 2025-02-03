@@ -104,4 +104,5 @@ The project is deployed using Gunicorn on Render:
    gunicorn math_api_project.wsgi:application --bind 0.0.0.0:8000
    ```
 
-
+## Hire Developer
+Looking to hire skilled Python developers? Visit [Hire a Python Developer](https://hng.tech/hire/python-developers).
